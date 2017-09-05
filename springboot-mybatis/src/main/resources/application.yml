@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver 
+    url: jdbc:mysql://localhost:3306/springboot
+    username: root
+    password: djk123
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
+
+mybatis:
+  config-location: classpath:sqlMapperConfig.xml
+  mapper-locations: classpath:noticeMapper.xml
+  type-aliases-package: com.weiyi.springboot.pojo
+  
